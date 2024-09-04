@@ -42,7 +42,7 @@ As tabelas dimensão detalham os diferentes aspectos dos dados e são relacionad
 
 Armazena informações sobre os professores, como nome, email, telefone, data de contratação e departamento ao qual pertencem.
 
-```
+```sql
 CREATE TABLE Dim_Professores (
     Professor_ID INT PRIMARY KEY AUTO_INCREMENT,
     Nome VARCHAR(100) NOT NULL,
@@ -55,7 +55,7 @@ CREATE TABLE Dim_Professores (
 #### Dim_Cursos
 Contém os dados sobre os cursos oferecidos, incluindo nome, descrição, duração e o departamento responsável.
 
-```
+```sql
 CREATE TABLE Dim_Cursos (
     Curso_ID INT PRIMARY KEY AUTO_INCREMENT,
     Nome_Curso VARCHAR(100) NOT NULL,
@@ -68,7 +68,7 @@ CREATE TABLE Dim_Cursos (
 #### Dim_Departamentos
 Armazena as informações dos departamentos, como nome e descrição.
 
-```
+```sql
 CREATE TABLE Dim_Departamentos (
     Departamento_ID INT PRIMARY KEY AUTO_INCREMENT,
     Nome_Departamento VARCHAR(100) NOT NULL,
@@ -80,7 +80,7 @@ CREATE TABLE Dim_Departamentos (
 
 Inclui os detalhes relacionados às datas, como data específica, ano, mês, dia e trimestre.
 
-```
+```sql
 CREATE TABLE Dim_Datas (
     Data_ID INT PRIMARY KEY AUTO_INCREMENT,
     Data DATE NOT NULL,
